@@ -118,19 +118,19 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('start', ['shell'], function () {
-        grunt.task.run(['shell:start'])
+        grunt.task.run(['shell:start']);
     });
 
     grunt.registerTask('stop', ['shell'], function () {
-        grunt.task.run(['shell:stop'])
+        grunt.task.run(['shell:stop']);
     });
 
     grunt.registerTask('kill', ['shell'], function () {
-        grunt.task.run(['shell:kill'])
+        grunt.task.run(['shell:kill']);
     });
 
     grunt.registerTask('reload', ['shell'], function () {
-        grunt.task.run(['shell:reload'])
+        grunt.task.run(['shell:reload']);
     });
 
 };
