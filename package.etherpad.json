@@ -16,7 +16,6 @@
         "ep_hide_referrer": "*",
         "ep_line_height": "*",
         "ep_page_view": "*",
-        "ep_tables": "*",
         "ep_tasklist": "*"
     }
 }
