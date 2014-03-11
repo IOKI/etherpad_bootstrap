@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                             cwd: 'app'
                         }
                     },
-                    command: 'sh bin/start.sh'
+                    command: 'sh bin/start.sh &'
                 },
                 stop: {
                     options: {
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                             cwd: 'app'
                         }
                     },
-                    command: 'sh bin/stop.sh'
+                    command: 'sh bin/stop.sh &'
                 },
                 setup: {
                     options: {
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
                             cwd: 'app'
                         }
                     },
-                    command: 'sh bin/kill.sh'
+                    command: 'sh bin/kill.sh &'
                 },
                 reload: {
                     options: {
@@ -70,7 +70,7 @@ module.exports = function (grunt) {
                             cwd: 'app'
                         }
                     },
-                    command: 'sh bin/reload.sh'
+                    command: 'sh bin/reload.sh &'
                 }
 
             }
