@@ -1,10 +1,13 @@
-etherpad_bootstrap
-==================
+#etherpad_bootstrap
 
-Requires:
-- pm2
-- grunt-cli
-- nodejs
+##requires
+
+1. pm2
+2. nodejs
+3. grunt-cli
+
+
+##howto
 
 0. sh bootstrap.sh - do all the things
 1. grunt [default task] - gets content from repositories and starts the app
