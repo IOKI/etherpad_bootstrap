@@ -1,0 +1,23 @@
+{
+    "name": "etherpad-build-plugins",
+    "version": "0.1.0",
+    "dependencies": {
+        "ep_fileupload": "*",
+        "ep_previewimages": "*",
+        "ep_disable_change_author_name": "*",
+        "ep_stop_writing": "*",
+        "ep_align": "*",
+        "ep_author_hover": "*",
+        "ep_cursortrace": "*",
+        "ep_default-pad-text": "*",
+        "ep_embedmedia": "*",
+        "ep_font_family": "*",
+        "ep_headings": "*",
+        "ep_help_bubbles": "*",
+        "ep_hide_referrer": "*",
+        "ep_line_height": "*",
+        "ep_page_view": "*",
+        "ep_tables": "*",
+        "ep_tasklist": "*"
+    }
+}
