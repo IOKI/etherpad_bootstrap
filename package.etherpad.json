@@ -4,7 +4,6 @@
     "dependencies": {
         "ep_fileupload": "*",
         "ep_previewimages": "*",
-        "ep_disable_change_author_name": "*",
         "ep_stop_writing": "*",
         "ep_align": "*",
         "ep_author_hover": "*",
