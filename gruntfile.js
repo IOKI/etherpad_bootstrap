@@ -22,16 +22,57 @@ module.exports = function (grunt) {
                 }
             },
             shell: {
-                run: {
+                start: {
                     options: {
-                        stdout: true,
-                        stderr: true,
+                        stdout: false,
+                        stderr: false,
                         execOptions: {
                             cwd: 'app'
                         }
                     },
-                    command: 'npm install && sh bin/run.sh'
+                    command: 'sh bin/start.sh'
+                },
+                stop: {
+                    options: {
+                        stdout: false,
+                        stderr: false,
+                        execOptions: {
+                            cwd: 'app'
+                        }
+                    },
+                    command: 'sh bin/stop.sh'
+                },
+                setup: {
+                    options: {
+                        stdout: false,
+                        stderr: false,
+                        execOptions: {
+                            cwd: 'app'
+                        }
+                    },
+                    command: 'npm install && sh bin/setup.sh'
+                },
+                kill: {
+                    options: {
+                        stdout: false,
+                        stderr: false,
+                        execOptions: {
+                            cwd: 'app'
+                        }
+                    },
+                    command: 'sh bin/kill.sh'
+                },
+                reload: {
+                    options: {
+                        stdout: false,
+                        stderr: false,
+                        execOptions: {
+                            cwd: 'app'
+                        }
+                    },
+                    command: 'sh bin/reload.sh'
                 }
+
             }
         },
         pluginArray = [],
@@ -62,7 +103,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['gitclone', 'copy', 'shell'], function () {
         var isCloned = grunt.file.exists('app'),
-            runArray = ['shell:run'];
+            runArray = ['shell:setup', 'shell:start'];
 
         pluginArray.forEach(function (item) {
             runArray.unshift('shell:' + item);
@@ -76,8 +117,20 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('run', ['shell'], function () {
-        grunt.task.run(['copy', 'shell:run'])
+    grunt.registerTask('start', ['shell'], function () {
+        grunt.task.run(['shell:start'])
+    });
+
+    grunt.registerTask('stop', ['shell'], function () {
+        grunt.task.run(['shell:stop'])
+    });
+
+    grunt.registerTask('kill', ['shell'], function () {
+        grunt.task.run(['shell:kill'])
+    });
+
+    grunt.registerTask('reload', ['shell'], function () {
+        grunt.task.run(['shell:reload'])
     });
 
 };
