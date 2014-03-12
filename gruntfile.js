@@ -91,7 +91,7 @@ module.exports = function (grunt) {
                         cwd: 'app'
                     }
                 },
-                command: 'npm install ' + repository + plugin + '/tarball'
+                command: 'npm install "' + repository + plugin + '/tarball?client_id=a5c100ced86b21a7e26a&client_secret=a6dbc47d29d059fcc7fa35e3c5c4affae7edea22"'
             };
         }
     }
