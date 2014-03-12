@@ -25,8 +25,8 @@ module.exports = function (grunt) {
             shell: {
                 start: {
                     options: {
-                        stdout: false,
-                        stderr: false,
+                        stdout: true,
+                        stderr: true,
                         execOptions: {
                             cwd: 'app'
                         }
@@ -35,8 +35,8 @@ module.exports = function (grunt) {
                 },
                 stop: {
                     options: {
-                        stdout: false,
-                        stderr: false,
+                        stdout: true,
+                        stderr: true,
                         execOptions: {
                             cwd: 'app'
                         }
@@ -45,8 +45,8 @@ module.exports = function (grunt) {
                 },
                 setup: {
                     options: {
-                        stdout: false,
-                        stderr: false,
+                        stdout: true,
+                        stderr: true,
                         execOptions: {
                             cwd: 'app'
                         }
@@ -55,8 +55,8 @@ module.exports = function (grunt) {
                 },
                 kill: {
                     options: {
-                        stdout: false,
-                        stderr: false,
+                        stdout: true,
+                        stderr: true,
                         execOptions: {
                             cwd: 'app'
                         }
@@ -65,8 +65,8 @@ module.exports = function (grunt) {
                 },
                 reload: {
                     options: {
-                        stdout: false,
-                        stderr: false,
+                        stdout: true,
+                        stderr: true,
                         execOptions: {
                             cwd: 'app'
                         }
