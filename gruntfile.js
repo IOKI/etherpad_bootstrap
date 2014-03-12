@@ -17,7 +17,8 @@ module.exports = function (grunt) {
                 packagePlugins: {
                     files: [
                         {expand: false, src: ['package.etherpad.json'], dest: 'app/package.json'},
-                        {expand: false, src: ['settings.json.template'], dest: 'app/settings.json'}
+                        {expand: false, src: ['settings.json.template'], dest: 'app/settings.json'},
+                        {expand: true, cwd: 'static/', src: ['**'], dest: 'app/nmel_frame/'}
                     ]
                 }
             },
