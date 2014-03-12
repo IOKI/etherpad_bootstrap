@@ -19,3 +19,4 @@
 ##testing
 
 1. app runs on port :8080
+2. nmel test frame is located in the 'static' directory -> this should be available from a http server
